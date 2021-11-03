@@ -1,0 +1,17 @@
+{
+    "name": "gogot/skolkovo",
+    "autoload": {
+        "psr-4": {
+            "core\\": "core",
+            "libs\\": "libs",
+            "app\\": "app"
+        }
+    },
+    "require": {
+        "vlucas/valitron": "^1.4",
+        "firebase/php-jwt": "^5.4",
+        "mpdf/mpdf": "^8.0",
+        "phpoffice/phpspreadsheet": "^1.18"
+    }
+}
+

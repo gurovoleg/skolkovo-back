@@ -1,0 +1,9 @@
+RewriteEngine on
+# QSA - флаг, который добавляет праметры get запроса, если они были
+# L - остановить процесс преобразования на этом месте и не применять больше никаких правил преобразований. Используйте этот флаг для того, чтобы не преобразовывать текущий URL другими, следующими за этим, правилами преобразований.
+RewriteCond %{REQUEST_URI} /api/
+RewriteRule (.*) index.php?$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) index.html?&1 [L,QSA]

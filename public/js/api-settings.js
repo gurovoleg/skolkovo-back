@@ -1,0 +1,1 @@
+window.backendUrl = 'http://skolkovo:88/api'
